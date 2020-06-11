@@ -1,0 +1,11 @@
+extends layouts/main.pug
+block content
+    .form__container
+        form(action=routes.editProfile, method="post")
+            input(name="title", placeholder="title", id="title", type="text")
+            input(name="description", placeholder="description", id="description", type="text")
+            input(type="submit",value="update video")
+        form(action=routes.deleteVideo, method="post")
+            input(type="submit",value="delete video")
+            
+

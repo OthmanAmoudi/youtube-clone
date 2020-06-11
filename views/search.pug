@@ -1,0 +1,12 @@
+extends layouts/main
+extends mixins/video
+block content
+    .search__header 
+        h3 Search results for: #{searchTerm}
+    .search__videos
+        //- each item in videos
+        //-     +video({
+        //-         title:item.title,
+        //-         views:item.views,
+        //-         videoFile:item.videoFile
+        //-     })

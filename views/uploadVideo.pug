@@ -1,0 +1,10 @@
+extends layouts/main.pug
+block content
+    .form__container
+        form(action=routes.editProfile, method="post")
+            label(for="video") Video File
+            input(name="video",id="video", type="file")
+            input(name="title",id="title", type="text")
+            input(name="description",id="description", type="text")
+            input(type="submit",value="upload video")
+
